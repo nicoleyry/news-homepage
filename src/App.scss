@@ -6,8 +6,34 @@
 	max-width: 100vw;
 	height: auto;
 	min-height: 100vh;
+	position: relative;
 
 	@media screen and (max-width: var.$breakpoint) {
-		padding: 30px 20px;
+		padding: 30px 20px 50px 20px;
+	}
+
+	& .attribution {
+		position: absolute;
+		transform: translateX(-50%);
+		left: 50%;
+		bottom: 5px;
+		font-size: 10px;
+		text-align: center;
+		z-index: 1;
+		color: var.$color-dark-grayish-blue;
+
+		& span {
+			white-space: nowrap;
+		}
+
+		& a {
+			color: hsl(228, 45%, 44%);
+			text-decoration: none;
+
+			&:hover,
+			&:active {
+				color: hsl(231, 37%, 17%);
+			}
+		}
 	}
 }
