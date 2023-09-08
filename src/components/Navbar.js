@@ -1,6 +1,15 @@
 import '../styles/navbar.scss';
+import BurgerMenu from '../assets/images/icon-menu.svg';
+import BurgerMenuClose from '../assets/images/icon-menu-close.svg';
+import { useState } from 'react';
 
 export default function Navbar() {
+	const [isOpened, setIsOpened] = useState(false);
+
+	let menuHandler = () => {
+		isOpened ? setIsOpened(false) : setIsOpened(true);
+	};
+
 	return (
 		<div className='Navbar'>
 			<div className='nav-logo'>
@@ -17,6 +26,19 @@ export default function Navbar() {
 				<p className='menu'>Popular</p>
 				<p className='menu'>Trending</p>
 				<p className='menu'>Categories</p>
+			</div>
+			<img className='nav-burger-open' onClick={menuHandler} src={BurgerMenu} alt='Open Menu' />
+			<div className={`menu-cover ${isOpened ? 'show' : ''}`}>
+				<div className='menu-container'>
+					<img className='nav-burger-close' onClick={menuHandler} src={BurgerMenuClose} alt='Close Menu' />
+					<div className="menu-wrapper">
+						<p className='mobile-menu'>Home</p>
+						<p className='mobile-menu'>New</p>
+						<p className='mobile-menu'>Popular</p>
+						<p className='mobile-menu'>Trending</p>
+						<p className='mobile-menu'>Categories</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
