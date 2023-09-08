@@ -1,0 +1,33 @@
+@use "./variables" as var;
+
+.Navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+
+	& .nav-logo {
+		cursor: pointer;
+
+		&:hover svg path,
+		&:active svg path {
+			fill: var.$color-soft-red;
+		}
+	}
+
+	& .nav-menu {
+		display: flex;
+		gap: 30px;
+
+		& .menu {
+			color: var.$color-dark-grayish-blue;
+			cursor: pointer;
+			font-weight: 500;
+
+			&:hover,
+			&:active {
+				color: var.$color-soft-red;
+			}
+		}
+	}
+}
