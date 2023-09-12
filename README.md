@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl/hub](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl/hub)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-landing-page-using-react-css-grid-and-flexbox-sass-vhuTjVvB3_](https://www.frontendmentor.io/solutions/responsive-landing-page-using-react-css-grid-and-flexbox-sass-vhuTjVvB3_)
 - Live Site URL: [https://nicoleyry-news-homepage.netlify.app/](https://nicoleyry-news-homepage.netlify.app/)
 
 ## My process
